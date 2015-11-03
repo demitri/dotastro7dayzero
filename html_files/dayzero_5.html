@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- content of head goes here -->
+</head>
+
+<body>
+   <!-- content of body goes here -->
+    <a href="http://dotastronomy.com">
+        Welcome to Day Zero!
+    </a>
+    <div id="mydivID">Text in div.</div>
+    <button id="myButton" type="button">Click Me!</button>
+</body>
+
+<script type="text/javascript">
+    
+    createNewElement = function() {
+        // get the div
+        theDiv = document.getElementById("mydivID");
+        
+        // create a new HTML element, here a link
+        newLink = document.createElement('a'); // produces <a></a>
+        newLink.href = 'http://the-toast.net/2015/10/06/two-monks/';
+        newLink.textContent = "Two Monks Discover How Tall Women And Horses Are"; // text between tags
+        
+        theDiv.appendChild(newLink);
+    }
+    
+    theButton = document.getElementById("myButton");
+    theButton.onclick = createNewElement;
+    
+</script>
+
+<html>
